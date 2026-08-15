@@ -1,5 +1,6 @@
 import { Brain, Compass, Heart, MessageCircleHeart, ShieldOff, Sparkles } from "lucide-react";
 import { LeadForm } from "@/components/LeadForm";
+import { Faq } from "@/components/Faq";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SITE } from "@/lib/site";
 
@@ -165,6 +166,7 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+        <Faq />
       </main>
       <SiteFooter />
     </>
