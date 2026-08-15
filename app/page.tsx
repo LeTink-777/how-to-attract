@@ -1,4 +1,5 @@
-import { Brain, Compass, Heart, MessageCircleHeart, ShieldOff, Sparkles } from "lucide-react";
+import { BookOpen, Brain, Compass, Heart, MessageCircleHeart, ShieldOff, Sparkles } from "lucide-react";
+import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
 import { Faq } from "@/components/Faq";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -32,6 +33,16 @@ export default function HomePage() {
   return (
     <>
       <main className="flex-1">
+        <nav className="mx-auto w-full max-w-6xl px-5 pt-6">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-accent"
+          >
+            <BookOpen className="size-4" aria-hidden="true" />
+            Блог
+          </Link>
+        </nav>
+
         {/* Hero */}
         <section className="relative overflow-hidden">
           <div
